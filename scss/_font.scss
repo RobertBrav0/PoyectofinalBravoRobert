@@ -1,0 +1,44 @@
+//fonts google
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Roboto&display=swap');
+
+$mainFont:'Roboto', sans-serif;
+$secondaryFont:'Montserrat', sans-serif;
+
+$textMd:1.3em;
+$textLg:1.8em;
+$textSm:0.8em;
+
+$textBold:600;
+$textRegular:400;
+$textThin:200;
+.h1{
+
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: #0a9c19;
+	text-shadow: 1px 1px 2px #333;
+	margin: 2rem auto;
+	text-align: center;
+	animation: neon 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes neon {
+	to {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #04963c, 0 0 70px #058e22, 0 0 80px #05d76b, 0 0 100px #17be08, 0 0 150px #15a217;
+	}
+  }
+  
+.textBold{
+	font-weight: $textBold;
+}
+.textCenter{
+	text-align: center;
+}
+.textRight{
+	text-align: right;
+}
+.textLeft{
+	text-align: left;
+}

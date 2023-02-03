@@ -1,0 +1,136 @@
+.d-item{
+    height: 600px;
+}
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.btn-more{
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to top, "primary", "secondary" );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: black;
+    &:hover{
+        background: linear-gradient(to bottom,"primary", "secondary");
+    }
+}
+
+.btn-rounded{
+    @extend .btn-more;
+    border-radius: 4px;
+}
+
+.box-gral{
+    width: 100%;
+    padding: 20px 10px;
+    margin: auto;
+}
+
+.box-gral-gray{
+   @extend .box-gral;
+   background-color: gray;
+}
+
+//mixins
+@mixin textos($size,$line-height,$color,$align){
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+    font-family: $mainFont;
+    padding: 10px;
+    @if $align == right {text-align: right}
+    @if $align == left {text-align: left}
+    @if $align == center{text-align: center}
+}
+
+.p{
+     @include textos(1.1em,1.4em,black,center);
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .loading {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .card-img-top {
+    width: 400px;
+    height: 400px;
+  }
+ 
+    
+    
+
+  #promotion {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  #promotion img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+  
+  .promo-text {
+    text-align: center;
+  }
+  
+  .promo-text h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .promo-text p {
+    font-size: 18px;
+    color: #555;
+  }
+
+.footer {
+    background-color:  #6D8B24;
+    color: black;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .footer img {
+    height: 80px;
+    margin: 0 1em;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+
+

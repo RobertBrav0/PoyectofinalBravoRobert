@@ -1,0 +1,13 @@
+$theme-colors: (
+  "primary":    #6D8B24,
+  "secondary": #3dab0b,
+  "dark": black 
+);
+
+
+
+@import "../scss/vars";
+@import "../scss/font";
+@import "../scss/mixins";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
